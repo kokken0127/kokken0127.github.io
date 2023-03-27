@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>This is the title of the webpage!</title>
+		<script type="text/javascript" src="http://159.65.137.180/javascript_qr/javascript_qr/qrcode.js"></script>
+		<link rel="stylesheet" href="http://159.65.137.180/qr_reader/qr_reader/dist/css/qrcode-reader.css">
+		<script src="http://159.65.137.180/qr_reader/qr_reader/dist/js/qrcode-reader.min.js?v=20190604"></script>
   </head>
   <body>
     <div class="page_content qr_scan_main_pg">
@@ -29,8 +32,8 @@
   </body>
 	<script>
 		jQuery(function($){
-			$.qrCodeReader.jsQRpath = "qr_reader/qr_reader/dist/js/jsQR/jsQR.min.js";
-			$.qrCodeReader.beepPath = "qr_reader/qr_reader/dist/audio/beep.mp3";
+			$.qrCodeReader.jsQRpath = "http://159.65.137.180/qr_reader/qr_reader/dist/js/jsQR/jsQR.min.js";
+			$.qrCodeReader.beepPath = "http://159.65.137.180/qr_reader/qr_reader/dist/audio/beep.mp3";
 
 			$("#openreader-single2").qrCodeReader({callback: function(code) {
 				if (code) {
